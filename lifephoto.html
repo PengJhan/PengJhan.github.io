@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 555px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+
+
+</head>
+<body>
+
+<header>
+  <h2>彭鉅展</h2>
+  <meta charset="utf-8">
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="introduction.html">自我介紹</a></li>
+      <li><a href="ntust.html">學校照片</a></li>
+      <li><a href="lifephoto.html">生活照</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Photoes in Life</h1>
+    <div>2019/03/01 當我們一起遊基隆潮境公園</div>
+    <div>這張照片裡的我們是在一個堤坊上拍的，當時趁著還沒漲潮，我們就越過一堆石頭跑到堤坊上去拍</div>
+    <div>照片後面的紅色柱子正是專門指引船隻方向的建築物--- 燈塔</div>
+    <div>備註：當中穿紅色鞋子的人就是我!!</div>
+    <img src="lifephoto.jpg" alt:"7位台北人+1位基隆人遊潮境" width="70%" height="145%">
+    <div style="text-align: right;">Photography by 郭旭</div>
+</div>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

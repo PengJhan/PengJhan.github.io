@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PengJhan</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #DD3A69;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #F5D540;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #523BA9;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:black ;
+  padding: 1px;
+  text-align: center;
+  color: white;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+#d01{
+  color: yellow;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #0000ff;
+  color: white;
+}
+</style>
+
+
+
+</head>
+<body>
+
+<header>
+  <h2>彭鉅展</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="introduction.html"style="text-decoration: none;" ><b style="font-size: 15px;">自我介紹</b></a></li><br>
+      <li><a href="ntust.html"style="text-decoration: none;"><b style="font-size: 15px">學校照片</b></a></li><br>
+      <li><a href="lifephoto.html"style="text-decoration: none;"><b style="font-size: 15px">生活照</b></a></li><br>
+    </ul>
+  </nav>
+  
+  <article>
+    <b><h1 id="d01">Introduce Myself</h1>
+    <p id="d01">姓名：彭鉅展</p>
+    <p id="d01">學校：國立台灣科技大學</p>
+    <div id="d01">科系&年級：資訊管理系二年級</div><br>
+    <div id="d01">喜歡打羽球和看NBA球賽，最愛的羽球明星是李宗偉;最看好的球隊是賽爾提克，希望他能與勇士隊來場精彩的比賽</div></b>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
